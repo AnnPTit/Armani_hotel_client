@@ -58,20 +58,27 @@ function DesignBlocks() {
             {item.typeRoomCode}
           </MKTypography>
           <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
-          {item.typeRoomCode}
+            {item.typeRoomCode}
           </MKTypography>
         </MKBox>
       </Grid>
       <Grid item xs={12} lg={9}>
-        {/* <Grid container spacing={3}>
-          {items.map(({ image, name, count, route, pro }) => (
+        <Grid container spacing={3}>
+          {dataTypeRoom.map(({ image, name, count, route, pro }) => (
             <Grid item xs={12} md={4} sx={{ mb: 2 }} key={name}>
-              <Link to={pro ? "/" : route}>
-                <ExampleCard image={image} name={name} count={count} pro={pro} />
+              <Link to={"/abc"}>
+                <ExampleCard
+                  image={
+                    "https://th.bing.com/th/id/OIP.v1sG89BR8FJPikukpHJefgHaE8?rs=1&pid=ImgDetMain"
+                  }
+                  name={name}
+                  count={count}
+                  pro={pro}
+                />
               </Link>
             </Grid>
           ))}
-        </Grid> */}
+        </Grid>
       </Grid>
     </Grid>
   ));
@@ -96,7 +103,7 @@ function DesignBlocks() {
             sx={{ mb: 2 }}
           />
           <MKTypography variant="h2" fontWeight="bold">
-            Huge collection of sections
+            Loại phòng của chúng tôi
           </MKTypography>
           <MKTypography variant="body1" color="text">
             We have created multiple options for you to put together and customise into pixel
